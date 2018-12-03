@@ -3,10 +3,158 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="header-main">
+      <nav class="header-nav">
+        <a class="logo" href="/index.html">
+          <img src="#" alt="logo-nerds" width="160" height="65">
+        </a>
+        <ul class="nav-list">
+          <li><a class="uppercase" href="#">Студия</a></li>
+          <li><a class="uppercase" href="#">Клиенты</a></li>
+          <li><a class="uppercase" href="#">Магазин</a></li>
+          <li><a class="uppercase" href="#">Контакты</a></li>
+          <li><a class="uppercase" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Студия дизайна НЁРДС</h1>
+      <section class="advertisement-slider">
+        <h2 class="visually-hidden">Рекламный слайдер студии дизайна НЁРДС</h2>
+        <ul class="advertisement-list">
+          <li>
+            <b>
+              Долго, дорого,<br> 
+                скрупулезно.
+            </b>
+            <p>
+              Математически выверенный дизайн<br> 
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="btn uppercase" href="#" >Узнать больше</a>
+          </li>
+          <li>
+            <b>
+              Любим математику<br>
+              как никто другой
+            </b>
+            <p>
+              Никакого креатива, только математические формулы 
+              для расчета идеальных пропорций.
+            </p>
+            <a class="btn uppercase" href="">Узнать больше</a>
+          </li>
+          <li>
+            <b>
+              Только ночь,<br>
+              только хардкор
+            </b>
+            <p>
+              Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a class="btn uppercase" href="">Узнать больше</a>
+          </li>
+        </ul>
+        <ul class="advertisement-controls">
+          <li><button type="button"><span class="visually-hidden">первый слайд</span></button></li>
+          <li><button type="button"><span class="visually-hidden">второй слайд</span></button></li>
+          <li><button type="button"><span class="visually-hidden">третий слайд</span></button></li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li>
+            <a href="#">
+              <img src="#" alt="веб-сайты" width="300" height="146">
+            </a>
+            <h3>веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="" class="btn uppercase">заказать</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#" alt="приложения" width="300" height="146">
+            </a>
+            <h3>приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="btn uppercase">заказать</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#" alt="презентации" width="300" height="146">
+            </a>
+            <h3>презентации</h3>
+            <p>
+              Вы даже не подозреваете, <br>
+              насколько вы изумительны!
+            </p>
+            <a href="#" class="btn uppercase">заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
+        <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <b>Выполняем заказы на разработку:</b>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        <img src="#" alt="логотип НЁРДС" width="360" height="208">
+        <b>с 2004 года Любим точность во всем:</b>
+        <table>
+          <tr>
+            <td>146<sub>%</sub></td>
+            <td>100<sub>%</sub></td>
+            <td>50<sub>%</sub></td>
+          </tr>
+          <tr>
+            <td>Уровень самотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+        <ul>
+          <li><img src="#" alt="htmlacademy" width="200" height="90"></li>
+          <li><img src="#" alt="barbershop borodinski" width="200" height="90"></li>
+          <li><img src="#" alt="pink" width="200" height="90"></li>
+          <li><img src="#" alt="mishka" width="200" height="90"></li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+      <!-- Правильно ли будет реализовать данное название в виде <h3>, что, воможно, лучше для поисковиков  или таки лучше <b> -->
+        <h3>NЁRDS DESIGN STUDIO</h3>
+      <!-- тестик стилей white-space:pre -->
+        <p>
+          191186, Санкт-Петербург, 
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+      <!-- Пока что не реализованна возможность заюзать кнопку при выключенном ДЖС, честно, подзабыл как сделать в паре с Батоном -->
+        <button type="button"><span>Напишите нам</span></button>
+        <span class="pointer"></span>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li><span class="social-vk"></span></li>
+        <li><span class="social-fb"></span></li>
+        <li><span class="social-inst"></span></li>
+      </ul>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
   </body>
 </html>
