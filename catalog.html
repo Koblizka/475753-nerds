@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Магазин готовых товаров</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="header-nav">
+        <a class="logo" href="/index.html">
+          <img src="#" alt="logo-nerds" width="160" height="65">
+        </a>
+        <ul class="nav-list">
+          <li><a class="uppercase" href="#">Студия</a></li>
+          <li><a class="uppercase" href="#">Клиенты</a></li>
+          <li><a class="uppercase" href="/catalog.html">Магазин</a></li>
+          <li><a class="uppercase" href="#">Контакты</a></li>
+          <li><a class="uppercase" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main class="container-catalog">
+      <aside class="filter-catalog">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <label class="visually-hidden" for="sort-price-range">Ползунок стоимости</label>
+            <input id="sort-price-range" type="range" name="filter-sort" min="0" max="15000" step="100">
+            <label class="visually-hidden" for="sort-price-num-min" aria-label="Минимальная цена">От</label>
+            <input id="sort-price-num-min" type="number" min="0" max="14900" step="100">
+            <label class="visually-hidden" for="sort-price-num-max" aria-label="Максимальная цена">До</label>
+            <input id="sort-price-num-max" type="number" min="100" max="15000" step="100" value="15000">
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="sort-option">
+                <input id="sort-layout-adaptive" type="radio" name="sort-layout" checked>
+                <label for="sort-layout-adaptive">Адаптивная</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-layout-fix" type="radio" name="sort-layout">
+                <label for="sort-layout-fix">Фиксированная</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-layout-resp" type="radio" name="sort-layout">
+                <label for="sort-layout-resp">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="sort-option">
+                <input id="sort-feature-slider" type="checkbox" name="slider">
+                <label for="sort-feature-slider">Слайдер</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-feature-ft" type="checkbox" name="features">
+                <label for="sort-feature-ft">Блок преимуществ</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-feature-news" type="checkbox" name="news">
+                <label for="sort-feature-news">Новости</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-feature-gallery" type="checkbox" name="gallery">
+                <label for="sort-feature-gallery">Галерея</label>
+              </li>
+              <li class="sort-option">
+                <input id="sort-feature-basket" type="checkbox" name="basket">
+                <label for="sort-feature-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn-submit" type="submit" >Показать</button>
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>
