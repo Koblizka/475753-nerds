@@ -148,15 +148,16 @@
       </section>
     <!-- модальное окно в контексте одного сайта это все же <section> или <article> -->
     <article class="modal-form visually-hidden">
+      <h2 class="visually-hidden">Модальное окно "Напишите нам"</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Напишите нам</legend>
           <label for="write-us-name">Ваше Имя:</label>
           <input id="write-us-name" name="write-us" type="text" placeholder="Имя Фамилия">
           <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" name="write-us" type="email" placeholder="">
+          <input id="write-us-email" name="write-us" type="email" placeholder="email@example.com">
           <label for="write-us-letter">Текст письма</label>
-          <textarea id="" name="write-us" cols="30" rows="10" placeholder="В свободной форме">
+          <textarea id="write-us-letter" name="write-us" cols="30" rows="10" placeholder="В свободной форме">
           </textarea>
           <button type="submit" name="write-us"><span>Отправить</span></button>
         </fieldset>
