@@ -10,17 +10,17 @@
     <header class="header-main">
       <nav class="header-nav">
         <a class="logo" href="index.html">
-          <img src="img/nerds-logo.png" alt="logo-nerds" width="160" height="65">
+          <img src="img/nerds-logo.png" alt="Дизайн студия Нёрдс" width="160" height="65">
         </a>
         <ul class="nav-list">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="nav-current"><a href="catalog.html">Магазин</a></li>
+          <li class="nav-current"><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="nav-user">
-            <li><a href="#">Корзина</a></li>
-          </ul>
+          <li><a href="#">Корзина</a></li>
+        </ul>
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
@@ -30,25 +30,25 @@
           <fieldset>
             <legend class="sort">Стоимость:</legend>
             <label class="visually-hidden" for="price-range">Ползунок стоимости</label>
-            <input id="price-range" type="range" name="filter-sort" min="0" max="15000" step="100">
+            <input id="price-range" type="range" name="price-range" min="0" max="15000" step="100">
             <label class="visually-hidden" for="price-num-min" aria-label="Минимальная цена">От</label>
-            <input id="price-num-min" type="number" min="0" max="14900" step="100">
+            <input id="price-num-min" type="number" name="price-num-min" min="0" max="14900" step="100">
             <label class="visually-hidden" for="price-num-max" aria-label="Максимальная цена">До</label>
-            <input id="price-num-max" type="number" min="100" max="15000" step="100" value="15000">
+            <input id="price-num-max" type="number" name="price-num-max" min="100" max="15000" step="100" value="15000">
           </fieldset>
           <fieldset>
             <legend class="sort">Сетка:</legend>
             <ul>
               <li class="sort-option">
-                <input id="layout-adaptive" type="radio" name="sort-layout" checked>
+                <input id="layout-adaptive" type="radio" name="sort-layout" value="layout-adaptive" checked>
                 <label for="layout-adaptive">Адаптивная</label>
               </li>
               <li class="sort-option">
-                <input id="layout-fix" type="radio" name="sort-layout">
+                <input id="layout-fix" type="radio" name="sort-layout" value="layout-fix">
                 <label for="layout-fix">Фиксированная</label>
               </li>
               <li class="sort-option">
-                <input id="layout-resp" type="radio" name="sort-layout">
+                <input id="layout-resp" type="radio" name="sort-layout" value="layout-resp">
                 <label for="layout-resp">Резиновая</label>
               </li>
             </ul>
@@ -57,23 +57,23 @@
             <legend class="sort">Особенности:</legend>
             <ul>
               <li class="sort-option">
-                <input id="feature-slider" type="checkbox" name="slider">
+                <input id="feature-slider" type="checkbox" name="feature-slider">
                 <label for="feature-slider">Слайдер</label>
               </li>
               <li class="sort-option">
-                <input id="feature-ft" type="checkbox" name="features">
+                <input id="feature-ft" type="checkbox" name="feature-ft">
                 <label for="feature-ft">Блок преимуществ</label>
               </li>
               <li class="sort-option">
-                <input id="feature-news" type="checkbox" name="news">
+                <input id="feature-news" type="checkbox" name="feature-news">
                 <label for="feature-news">Новости</label>
               </li>
               <li class="sort-option">
-                <input id="feature-gallery" type="checkbox" name="gallery">
+                <input id="feature-gallery" type="checkbox" name="feature-gallery">
                 <label for="feature-gallery">Галерея</label>
               </li>
               <li class="sort-option">
-                <input id="feature-basket" type="checkbox" name="basket">
+                <input id="feature-basket" type="checkbox" name="feature-basket">
                 <label for="feature-basket">Корзина</label>
               </li>
             </ul>
@@ -84,15 +84,15 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <div class="sort-catalog">
-          <span class="sort">Сортировать</span>
+          <h3>Сортировать</h3>
           <ul class="sort-list">
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по названию</a></li>
           </ul>
           <ul class="sort-direction">
-            <li><a href="#" aria-label="порядок сортировки нисходящий"><span class="direction-down"></span></a></li>
-            <li><a href="#" aria-label="порядок сортировки возрастающий"><span class="direction-up"></span></a></li>
+            <li><a href="#" aria-label="сортировать от большего к меньшему"></a></li>
+            <li><a href="#" aria-label="сортировать от меньшего к большему"></a></li>
           </ul>
         </div>
         <ul class="catalog-list">
@@ -100,7 +100,6 @@
             <img src="img/img-sedona.jpg" alt="пример макета Sedona" width="360" height="576">
             <div class="visually-hidden">
               <h3><a href="#">Sedona</a></h3>
-              <!-- возможно, у параграфов нужно расставлять br, но мне кажется можно стилизацией это решить -->
               <p>Информационный сайт для туристов</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -155,37 +154,20 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>
-          191186, Санкт-Петербург, 
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <!-- <button type="button"><span>Напишите нам</span></button> -->
-        <a class="btn" href="#">Напишите нам</a>
-        <span class="pointer" aria-label="Адрес: 191186, Санкт-Петербург, 
-        ул. Б. Конюшенная, д. 19/8"></span>
+        <div>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <!-- тестик стилей white-space:pre -->
+          <p>
+            191186, Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <!-- <button type="button"><span>Напишите нам</span></button> -->
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+        <img src="img/map-markerjpg.jpg" alt="Адрес: 191186, Санкт-Петербург, 
+        ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
       </section>
-      <section class="modal-form visually-hidden">
-        <h2>Напишите нам:</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="name">Ваше Имя:</label>
-            <input id="name" name="write-us" type="text" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="email">Ваш e-mail:</label>
-            <input id="email" name="write-us" type="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="letter">Текст письма</label>
-            <textarea id="letter" name="write-us" cols="30" rows="10" placeholder="В свободной форме">
-            </textarea>
-          </p>
-          <button type="submit" name="write-us">Отправить</button>
-        </form>
-        <button type="button" aria-label="Закрыть модальное окно"></button>
-      </section>  
     </main>
     <footer class="main-footer">
       <ul class="social-list">
@@ -193,11 +175,30 @@
         <li><a class="social-fb" href="#" aria-label="Нёрдс в Фейсбуке"></a></li>
         <li><a class="social-inst" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
       </ul>
-      <p>
+      <div>
         <b>Давайте дружить, это выгодно!</b>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
+    <section class="modal-form visually-hidden">
+      <h2>Напишите нам:</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше Имя:</label>
+          <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" name="email" type="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter">Текст письма</label>
+          <textarea id="letter" name="letter" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button type="submit" name="write-us">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть модальное окно"></button>
+    </section>  
   </body>
 </html>
-<!-- Для вызова проверки 10-го задания -->
