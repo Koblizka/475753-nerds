@@ -17,6 +17,8 @@
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="nav-user">
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
@@ -129,13 +131,15 @@
             </tr>
           </table>
         </div>
-     
+      </section>
+      <section class="clients">
+        <h2 class="visually-hidden">Наши клиенты</h2>
         <ul>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="htmlacademy" width="200" height="90"></a></li>
-          <li><a href="#"><img src="#" alt="barbershop borodinski" width="200" height="90"></a></li>
-          <li><a href="#"><img src="#" alt="pink" width="200" height="90"></a></li>
-          <li><a href="#"><img src="#" alt="mishka" width="200" height="90"></a></li>
-        </ul>
+            <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="htmlacademy" width="200" height="90"></a></li>
+            <li><a href="#"><img src="#" alt="barbershop borodinski" width="200" height="90"></a></li>
+            <li><a href="#"><img src="#" alt="pink" width="200" height="90"></a></li>
+            <li><a href="#"><img src="#" alt="mishka" width="200" height="90"></a></li>
+          </ul>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -155,10 +159,10 @@
       </section>
     <!-- модальное окно в контексте одного сайта это все же <section> или <article> -->
     <section class="modal-form visually-hidden">
-      <h2 class="visually-hidden">Модальное окно "Напишите нам"</h2>
+      <h2>Напишите нам:</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="write-us">
-          <legend>Напишите нам</legend>
+
           <p>
             <label for="name">Ваше Имя:</label>
             <input id="name" name="write-us" type="text" placeholder="Имя Фамилия">
