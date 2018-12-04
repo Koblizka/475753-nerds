@@ -97,10 +97,9 @@
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <!-- думал как правильно разместить картинку - решил что все таки это контентное изображение -->
             <img src="img/img-sedona.jpg" alt="пример макета Sedona" width="360" height="576">
             <div class="visually-hidden">
-              <h3>Sedona</h3>
+              <h3><a href="#">Sedona</a></h3>
               <!-- возможно, у параграфов нужно расставлять br, но мне кажется можно стилизацией это решить -->
               <p>Информационный сайт для туристов</p>
               <a class="btn" href="#">9 900 руб.</a>
@@ -109,7 +108,7 @@
           <li class="catalog-item">
             <img src="img/img-pink.jpg" alt="пример макета Pink App" width="360" height="576">
             <div class="visually-hidden">
-              <h3>Pink App</h3>
+              <h3><a href="">Pink App</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -117,7 +116,7 @@
           <li class="catalog-item">
             <img src="img/img-barbershop.jpg" alt="пример макета Barbershop" width="360" height="576">
             <div class="visually-hidden">
-              <h3>Barbershop</h3>
+              <h3><a href="">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -125,7 +124,7 @@
           <li class="catalog-item">
             <img src="img/img-mishka.jpg" alt="пример макета MISHKA" width="360" height="576">
             <div class="visually-hidden">
-              <h3>MISHKA</h3>
+              <h3><a href="">MISHKA</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -133,7 +132,7 @@
           <li class="catalog-item">
             <img src="img/img-aplus.jpg" alt="пример макета A Plus" width="360" height="576">
             <div class="visually-hidden">
-              <h3>A Plus</h3>
+              <h3><a href="">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -141,7 +140,7 @@
           <li class="catalog-item">
             <img src="img/img-kvast.jpg" alt="пример макета КВАСТ" width="360" height="576">
             <div class="visually-hidden">
-              <h3>КВАСТ</h3>
+              <h3><a href="">КВАСТ</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a class="btn" href="#">9 900 руб.</a>
             </div>
@@ -155,49 +154,49 @@
         </ul>
       </section>
       <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <h3>NЁRDS DESIGN STUDIO</h3>
+        <h2 class="visually-hidden">Контакты</h2>
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>
+          191186, Санкт-Петербург, 
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <!-- <button type="button"><span>Напишите нам</span></button> -->
+        <a class="btn" href="#">Напишите нам</a>
+        <span class="pointer" aria-label="Адрес: 191186, Санкт-Петербург, 
+        ул. Б. Конюшенная, д. 19/8"></span>
+      </section>
+      <section class="modal-form visually-hidden">
+        <h2>Напишите нам:</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            191186, Санкт-Петербург, 
-            ул. Б. Конюшенная, д. 19/8
+            <label for="name">Ваше Имя:</label>
+            <input id="name" name="write-us" type="text" placeholder="Имя Фамилия">
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <!-- <button type="button"><span>Напишите нам</span></button> -->
-          <a class="btn" href="#">Напишите нам</a>
-          <span class="pointer" aria-label="Адрес: 191186, Санкт-Петербург, 
-          ул. Б. Конюшенная, д. 19/8"></span>
-        </section>
-        <section class="modal-form visually-hidden">
-          <h2>Напишите нам:</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="name">Ваше Имя:</label>
-                <input id="name" name="write-us" type="text" placeholder="Имя Фамилия">
-              </p>
-              <p>
-                <label for="email">Ваш e-mail:</label>
-                <input id="email" name="write-us" type="email" placeholder="email@example.com">
-              </p>
-              <p>
-                <label for="letter">Текст письма</label>
-                <textarea id="letter" name="write-us" cols="30" rows="10" placeholder="В свободной форме">
-                </textarea>
-              </p>
-              <button type="submit" name="write-us">Отправить</button>
-          </form>
-          <button type="button" aria-label="Закрыть модальное окно"></button>
-        </section>  
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" name="write-us" type="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="letter">Текст письма</label>
+            <textarea id="letter" name="write-us" cols="30" rows="10" placeholder="В свободной форме">
+            </textarea>
+          </p>
+          <button type="submit" name="write-us">Отправить</button>
+        </form>
+        <button type="button" aria-label="Закрыть модальное окно"></button>
+      </section>  
     </main>
     <footer class="main-footer">
-        <ul class="social-list">
-          <li><a class="social-vk" href="#" aria-label="Нёрдс в Вконтакте"></a></li>
-          <li><a class="social-fb" href="#" aria-label="Нёрдс в Фейсбуке"></a></li>
-          <li><a class="social-inst" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
-        </ul>
-        <p>
-          <b>Давайте дружить, это выгодно!</b>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
-      </footer>
+      <ul class="social-list">
+        <li><a class="social-vk" href="#" aria-label="Нёрдс в Вконтакте"></a></li>
+        <li><a class="social-fb" href="#" aria-label="Нёрдс в Фейсбуке"></a></li>
+        <li><a class="social-inst" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
+      </ul>
+      <p>
+        <b>Давайте дружить, это выгодно!</b>
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </footer>
   </body>
 </html>
