@@ -14,13 +14,15 @@ a {
   text-decoration: none;
 }
 
-.btn { 
+.btn {
   font: inherit;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
+  text-transform: uppercase;
 
   background-color: #fb565a;
+  border: none;
 }
 
 .btn:hover {
@@ -33,7 +35,22 @@ a {
 }
 
 /* Хеддер и навигация */
-.header-nav { 
+.header-main {
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+
+  background-color: #eee;
+}
+
+.header-main h1,
+.advantages b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.header-nav {
   font-weight: 500;
   line-height: 30px;
   color: #000;
@@ -66,6 +83,7 @@ a {
 .logo:hover {
   opacity: 0.8;
 }
+
 .logo:active {
   opacity: 0.3;
 }
@@ -75,9 +93,11 @@ a {
   background-color: #eee;
 }
 
+.advantages-list {
+  list-style: none;
+}
+
 .advantages b {
-  font-size: 55px;
-  line-height: 55px;
   color: #000;
 }
 
@@ -88,11 +108,11 @@ a {
   background-color: #fff;
 }
 
-.products-list{
+.products-list {
   list-style: none;
 }
 
-.products h3{
+.products h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -101,7 +121,7 @@ a {
 }
 
 /* Преимущества и Слайдер -- Кнопки */
-.products-item:nth-child(2) .btn { 
+.products-item:nth-child(2) .btn {
   background-color: #00ca74;
 }
 
@@ -109,7 +129,7 @@ a {
   background-color: #efc849;
 }
 
-.products-item:nth-child(2) .btn:hover { 
+.products-item:nth-child(2) .btn:hover {
   background-color: #00bc6c;
 }
 
@@ -117,7 +137,7 @@ a {
   background-color: #eab534;
 }
 
-.products-item:nth-child(2) .btn:active { 
+.products-item:nth-child(2) .btn:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #00aa62;
@@ -129,28 +149,27 @@ a {
   background-color: #e5a722;
 }
 
-
 /* О нас */
-.about-us { 
+.about-us {
   color: #283136;
 
   background-color: #eee;
 }
 
-.about-us b{
+.about-us b {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #000;
 }
 
-.about-us b:first-child{
+.about-us b:first-child {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
-.about-us ul{
+.about-us ul {
   list-style: none;
 }
 
@@ -183,7 +202,6 @@ a {
   opacity: 0.1;
 }
 
-
 /* Контакты */
 .contacts {
   line-height: 18px;
@@ -192,7 +210,7 @@ a {
   background-color: #fff;
 }
 
-.contacts h3{
+.contacts h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -207,7 +225,7 @@ a {
   background-color: #fff;
 }
 
-.main-footer b{
+.main-footer b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -216,6 +234,47 @@ a {
 
 .social-list {
   list-style: none;
+}
+
+/* Инпуты Каталога */
+
+.filter-catalog {
+  line-height: 20px;
+
+  background-color: #fff;
+}
+
+.filter-catalog legend,
+.catalog h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.filter-catalog input { 
+  background-color: #eee;
+}
+
+.filter-catalog ul { 
+  list-style: none;
+}
+
+.filter-catalog .btn { 
+  color: #000;
+
+  background-color: #eee;
+}
+
+/* Каталог готовых шаблонов */
+.catalog {
+
+}
+
+/* Тут остановился ЙАААААААААААААААААААААаааааааааааа */
+.catalog h3 { 
+  line-height: 18px;
 }
 
 /* Модальная форма */
@@ -227,7 +286,7 @@ a {
   background-color: #fff;
 }
 
-.modal-form h2 { 
+.modal-form h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -244,7 +303,7 @@ a {
 }
 
 .modal-form input:hover,
-.modal-form textarea:hover { 
+.modal-form textarea:hover {
   color: rgba(68, 68, 68, 0.5);
 
   border-color: #b4b9bb;
@@ -264,13 +323,14 @@ a {
   border-color: #e74246;
 }
 
-.modal-form button[type="submit"] { 
+.modal-form button[type="submit"] {
   font: inherit;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
 
   background-color: #fb565a;
+  border: none;
 }
 
 .modal-form button[type="submit"]:hover,
