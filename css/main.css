@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn { 
+  font: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+
+  background-color: #fb565a;
+}
+
+.btn:hover {
+  background-color: #e74246;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+/* Хеддер и навигация */
+.header-nav { 
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+
+  background-color: #eee;
+}
+
+.nav-list,
+.nav-user {
+  list-style: none;
+}
+
+.nav-list a,
+.nav-user a {
+  color: #000;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-user a:hover,
+.nav-user a:focus {
+  color: #fb565a;
+}
+
+.nav-list a:active,
+.nav-user a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.3;
+}
+
+ /* Преимущества и Слайдер */
+.advantages {
+  background-color: #eee;
+}
+
+.advantages b {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000;
+}
+
+/* Услуги */
+.products {
+  color: #283136;
+
+  background-color: #fff;
+}
+
+.products-list{
+  list-style: none;
+}
+
+.products h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* Преимущества и Слайдер -- Кнопки */
+.products-item:nth-child(2) .btn { 
+  background-color: #00ca74;
+}
+
+.products-item:nth-child(3) .btn {
+  background-color: #efc849;
+}
+
+.products-item:nth-child(2) .btn:hover { 
+  background-color: #00bc6c;
+}
+
+.products-item:nth-child(3) .btn:hover {
+  background-color: #eab534;
+}
+
+.products-item:nth-child(2) .btn:active { 
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
+}
+
+.products-item:nth-child(3) .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #e5a722;
+}
+
+
+/* О нас */
+.about-us { 
+  color: #283136;
+
+  background-color: #eee;
+}
+
+.about-us b{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.about-us b:first-child{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-us ul{
+  list-style: none;
+}
+
+.about-us tr {
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.about-us tr:first-child {
+  font-size: 45px;
+  line-height: 10.06px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Наши клиенты  */
+.clients ul {
+  list-style: none;
+}
+
+.clients li {
+  opacity: 0.2;
+}
+
+.clients li:hover {
+  opacity: 1;
+}
+
+.clients li:active {
+  opacity: 0.1;
+}
+
+
+/* Контакты */
+.contacts {
+  line-height: 18px;
+  color: #666;
+
+  background-color: #fff;
+}
+
+.contacts h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Футер */
+.main-footer {
+  line-height: 22px;
+  color: #444;
+
+  background-color: #fff;
+}
+
+.main-footer b{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.social-list {
+  list-style: none;
+}
+
+/* Модальная форма */
+.modal-form {
+  line-height: 18px;
+  font-weight: 700;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.modal-form h2 { 
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal-form input,
+.modal-form textarea {
+  font: inherit;
+  line-height: 18px;
+  color: #444;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover { 
+  color: rgba(68, 68, 68, 0.5);
+
+  border-color: #b4b9bb;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  color: #444;
+
+  border-color: #000;
+}
+
+.modal-form input:invalid,
+.modal-form textarea:invalid {
+  color: #e74246;
+
+  border-color: #e74246;
+}
+
+.modal-form button[type="submit"] { 
+  font: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+
+  background-color: #fb565a;
+}
+
+.modal-form button[type="submit"]:hover,
+.modal-form button[type="submit"]:focus {
+  background-color: #e74246;
+}
+
+.modal-form button[type="submit"]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
