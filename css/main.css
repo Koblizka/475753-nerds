@@ -50,6 +50,7 @@ a {
 
   background-color: #fb565a;
   border: none;
+  /* border-radius: 5px; */
 }
 
 .btn:hover {
@@ -329,6 +330,11 @@ a {
   background-color: #eee;
 }
 
+.item-info .btn:hover,
+.item-info .btn:active {
+  color: #fff;
+}
+
 .item-title a {
   font-size: 18px;
   line-height: 30px;
@@ -338,6 +344,41 @@ a {
 }
 
 /* Пагинация */
+.pagination-list { 
+  list-style: none;
+}
+
+.pagination-item a,
+.pagination-next a {
+  font-weight: 500;
+  color: #000;
+}
+
+.pagination-item,
+.pagination-next { 
+  background-color: #eee;
+}
+
+.pagination-item:hover,
+.pagination-next:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+  background-color: #d5d5d5;
+}
+
+.pagination-item:active a,
+.pagination-next:active a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-current,
+.pagination-item:hover.pagination-current,
+.pagination-item:active.pagination-current {
+  background-color: #fff;
+  border: 2px solid #dbdbdb;
+}
 
 
 
