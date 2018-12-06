@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -30,7 +30,7 @@
         <h2 class="visually-hidden">Преимущества студии дизайна НЁРДС</h2>
         <ul class="advantages-list">
           <li>
-            <b>
+            <b class="advantages-slogan">
               Долго, дорого,<br> 
                 скрупулезно.
             </b>
@@ -41,7 +41,7 @@
             <a class="btn" href="#" >Узнать больше</a>
           </li>
           <li>
-            <b>
+            <b class="advantages-slogan">
               Любим математику<br>
               как никто другой
             </b>
@@ -52,7 +52,7 @@
             <a class="btn" href="">Узнать больше</a>
           </li>
           <li>
-            <b>
+            <b class="advantages-slogan">
               Только ночь,<br>
               только хардкор
             </b>
@@ -73,17 +73,17 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="products-list">
           <li class="products-item">
-            <h3>веб-сайты</h3>
+            <h3 class="products-title">веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a href="#" class="btn">заказать</a>
           </li>
           <li class="products-item">
-            <h3>приложения</h3>
+            <h3 class="products-title">приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a href="#" class="btn">заказать</a>
           </li>
           <li class="products-item">
-            <h3>презентации</h3>
+            <h3 class="products-title">презентации</h3>
             <p>
               Вы даже не подозреваете, <br>
               насколько вы изумительны!
@@ -95,12 +95,12 @@
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
         <div>
-          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <b class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <b>Выполняем заказы на разработку:</b>
+          <b class="about-us-promo">Выполняем заказы на разработку:</b>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -109,7 +109,7 @@
         </div>
         <div>
           <b>с 2004 года Любим точность во всем:</b>
-          <table>
+          <table class="about-us-success">
             <tr>
               <td>146<sup>%</sup></td>
               <td>100<sup>%</sup></td>
@@ -161,7 +161,7 @@
       </div>
     </footer>
     <section class="modal-form visually-hidden">
-      <h2>Напишите нам:</h2>
+      <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name">Ваше Имя:</label>
