@@ -25,7 +25,7 @@
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
-    <main class="container-catalog">
+    <main class="container-catalog container-index">
       <aside class="filter-catalog">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
@@ -155,49 +155,55 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div>
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <!-- тестик стилей white-space:pre -->
-          <p>
-            191186, Санкт-Петербург, 
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <!-- <button type="button"><span>Напишите нам</span></button> -->
-          <a class="btn" href="#">Напишите нам</a>
+        <div class="contacts-container">
+          <div class="contacts-wrapper">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <!-- тестик стилей white-space:pre -->
+            <p>
+              191186, Санкт-Петербург, 
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <!-- <button type="button"><span>Напишите нам</span></button> -->
+            <a class="btn" href="#">Напишите нам</a>
+          </div>
         </div>
         <img src="img/map-markerjpg.jpg" alt="Адрес: 191186, Санкт-Петербург, 
         ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container-index">
       <ul class="social-list">
         <li><a class="social-vk" href="#" aria-label="Нёрдс в Вконтакте"></a></li>
         <li><a class="social-fb" href="#" aria-label="Нёрдс в Фейсбуке"></a></li>
         <li><a class="social-inst" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
       </ul>
-      <div>
+      <div class="footer-slogan">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <section class="modal-form visually-hidden">
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше Имя:</label>
-          <input id="name" name="name" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input id="email" name="email" type="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="letter">Текст письма</label>
-          <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit" name="write-us">Отправить</button>
-      </form>
+      <div class="modal-form-container">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-name">
+            <p>
+              <label for="name">Ваше Имя:</label>
+              <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input id="email" name="email" type="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p class="modal-letter">
+            <label for="letter">Текст письма</label>
+            <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit" name="write-us">Отправить</button>
+        </form>
+      </div>
       <button type="button" aria-label="Закрыть модальное окно"></button>
     </section>  
   </body>
