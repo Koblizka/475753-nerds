@@ -4,6 +4,7 @@
        url("../fonts/roboto.woff2") format("woff2"),
        url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face { 
@@ -12,6 +13,7 @@
        url("../fonts/robotomedium.woff2") format("woff2"),
        url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
 }
 
 @font-face { 
@@ -20,6 +22,7 @@
        url("../fonts/robotobold.woff2") format("woff2"),
        url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
 }
 
 html {
@@ -30,9 +33,13 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 body {
-  min-width: 1440px;
   margin: 0;
+  padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -43,19 +50,24 @@ body {
   background-color: #fff;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
-/* Надо откорректровать  */
 .visually-hidden {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: (0 0 0 0);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -68,7 +80,7 @@ a {
 
   background-color: #fb565a;
   border: none;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
 
 .btn:hover {
@@ -88,33 +100,21 @@ a {
 
 /* Хеддер и навигация */
 .header-main {
-  padding-top: 50px;
-  min-height: 115px;
-
-  font-weight: 500;
-  line-height: 30px;
   color: #000;
 
   background-color: #eee;
 }
 
-.header-main h1 { /* Влияет на страницу Каталога */
-  min-height: 240px;
-  margin: 0;
-  margin-bottom: 50px;
-  padding-top: 70px;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-
-  text-align: center;
-}
-
 .header-nav {
+  /* width: 1160px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  padding-top: 52px;
+
+  font-weight: 500;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -127,8 +127,15 @@ a {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
   width: 440px;
+}
+
+.nav-list li:first-child {
+  padding-left: 0;
+}
+
+.nav-list li {
+  padding-left: 46px;
 }
 
 .nav-user {
@@ -169,70 +176,66 @@ a {
 
  /* Преимущества и Слайдер */
 .advantages {
-  min-height: 420px;
-
   background-color: #eee;
 }
 
 .advantages .container-index {
   display: flex;
-  min-height: 300px;
+  /* min-height: 300px; */
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
-  padding-top: 65px;
+  margin-bottom: 80px;
 
   list-style: none;
 }
 
-.advantages-list li {
+.advantages-item {
   display: flex;
   flex-direction: column;
-}
-
-.advantages-item {
-  width: 380px;
-}
-
-.advantages-item p {
-  margin-top: 30px;
-}
-
-.advantages-item .btn {
-  width: 240px;
-  min-height: 50px;
-  margin-top: 20px;
-  padding-top: 18px;
-
-  text-align: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
 }
 
 .advantages-slogan {
+  margin-bottom: 25px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000;
 }
 
-.advantages-controls { 
+.advantages-item p {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.advantages-item .btn {
+  padding: 18px 56px 14px;
+
+  text-align: center;
+}
+
+.advantages-controls {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  width: 100px;
-  min-height: 30px;
-  margin-top: auto;
-  margin-left: 150px;
+  /* width: 100px; */
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-
 /* Услуги */
 .products {
-  min-height: 510px;
+  padding-top: 80px;
+
   color: #283136;
 
   background-color: #fff;
@@ -240,8 +243,6 @@ a {
 
 .products-list {
   display: flex;
-  justify-content: space-between;
-  width: 1100px;
   margin: 0;
   padding: 0;
 
@@ -251,14 +252,22 @@ a {
 .products-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-start;
   width: 300px;
-  min-height: 345px;
-  margin-top: 80px;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+
+.products-item:first-child {
+  margin-left: 0;
 }
 
 .products-title {
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  padding-top: 170px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -266,12 +275,16 @@ a {
   text-transform: uppercase;
 }
 
+.products-item p {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
 /* Услуги -- Кнопки */
 .products-item .btn {
-  width: 160px;
-  min-height: 50px;
-  margin-top: 10px;
-  padding-top: 18px;
+  /* width: 160px; */
+  padding: 18px 40px 14px;
 
   text-align: center;
 }
@@ -307,9 +320,8 @@ a {
 /* О нас */
 .about-us {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 530px;
+  margin-bottom: 50px;
+  padding-top: 75px;
 
   color: #283136;
 
@@ -326,61 +338,94 @@ a {
 .about-us-dis {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 660px;
-  min-height: 420px;
 }
 
 .about-us-slogan {
+  margin-bottom: 35px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
+.about-us-dis p {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+}
+
 .about-us-promo {
+  margin-bottom: 25px;
+
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
 }
 
+.about-us .promo-list {
+  padding-left: 35px;
+}
+
+.promo-list li {
+  padding-bottom: 24px;
+}
+
 .about-us-tab {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   width: 360px;
-  min-height: 420px;
+  margin-left: 140px;
+  padding-top: 210px;
 }
 
 .about-us-tab b {
+  padding-left: 18px;
+
   text-transform: uppercase;
 }
 
-.about-us-success tr {
+.success-row {
   line-height: 18px;
   font-weight: 400;
 }
 
-.about-us-success tr:first-child {
+.success-row:first-child {
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
   color: #000;
 }
 
-.about-us-success td {
-  padding-top: 60px;
+.success-row sup {
+  font-size: 30px;
 }
 
-/* Наши клиенты  */
+.success-row td {
+  padding-top: 55px;
+  padding-left: 12px;
+}
+
+.success-row td:first-child {
+  padding-left: 0;
+}
+
+.success-row td:last-child {
+  padding-left: 18px;
+}
+
+.success-row:nth-child(2) td {
+  padding-top: 35px;
+}
+
+/* Наши клиенты */
 .clients {
-  margin-bottom: 80px;
+  margin-bottom: 75px;
+  padding: 44px 32px;
 }
 
 .clients ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 180px;
   margin: 0;
   padding: 0;
 
@@ -389,10 +434,33 @@ a {
 
 .clients li {
   width: 260px;
+  margin-right: 95px;
 
   text-align: center;
 
   opacity: 0.2;
+}
+
+.clients li:first-child {
+  width: 199px;
+  padding-top: 17px;
+}
+
+.clients li:nth-child(2) {
+  width: 209px;
+  margin-right: 103px;
+}
+
+.clients li:nth-child(3) {
+  width: 185px;
+  margin-right: 121px;
+  padding-top: 20px;
+}
+
+.clients li:last-child {
+  width: 173px;
+  margin-right: 0;
+  padding-top: 7px;
 }
 
 .clients li:hover {
@@ -403,11 +471,14 @@ a {
   opacity: 0.1;
 }
 
-/* Контакты */
+/* Футер Контакты */
 .contacts {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  min-height: 420px;
+  width: 1440px;
+  margin: 0 auto;
 
   line-height: 18px;
   color: #666;
@@ -415,9 +486,13 @@ a {
   background-color: #fff;
 }
 
+.map {
+  margin: 0 auto;
+}
+
 .contacts-container {
   position: absolute;
-  z-index: 1;
+  left: 140px;
 
   width: 320px;
   min-height: 310px;
@@ -449,17 +524,13 @@ a {
   text-align: center;
 }
 
-.contacts img {
-  position: relative;
-  top: 0;
-  left: -140px;
-}
 
 /* Футер */
 .main-footer {
   display: flex;
   align-items: center;
-  min-height: 218px;
+  padding-top: 75px;
+  /* min-height: 218px; */
 
   line-height: 22px;
   color: #444;
@@ -476,7 +547,6 @@ a {
 
 .social-list {
   width: 260px;
-  min-height: 85px;
   margin: 0;
   padding: 0;
 
@@ -488,15 +558,36 @@ a {
   margin-left: 140px;
 }
 
-/* ========УБЕЙТЕ МЕНЯ============ */
+.footer-slogan p {
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+}
+
 
 /* Инпуты Каталога */
 .container-catalog {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  margin-top: 48px;
 }
 
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  padding-bottom: 115px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+
+  text-align: center;
+
+  background-color: #eee;
+}
 
 .filter-catalog {
   width: 260px;
@@ -510,7 +601,7 @@ a {
 .filter-catalog form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   min-height: 780px;
 }
 
@@ -521,7 +612,9 @@ a {
   border: none;
 }
 
-.filter-catalog legend {
+.filter-catalog .sort-name {
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -540,45 +633,89 @@ a {
   list-style: none;
 }
 
-.filter-catalog .btn { 
+.filter-catalog .btn {
+  padding: 17px 0;
+
   color: #000;
 
   background-color: #eee;
 }
+
+/* Сортировка --- Стоимость */
+.filter-catalog .filter-price {
+  margin-bottom: 60px;
+
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-price .sort-name {
+  margin-bottom: 40px;
+}
+
+.slide-range-block {
+  margin-bottom: 5px;
+  padding: 38px 18px;
+}
+
+.num-range-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.num-range-block label {
+  margin-right: 15px;
+}
+
+/* Сортировка --- Сетка & Особенности */
+.filter-grid input,
+.filter-features input {
+  margin-bottom: 24px;
+}
+
+.filter-grid label,
+.filter-features label {
+  padding-left: 20px;
+}
+
+/* Сортировка --- Сетка */
+.filter-catalog .filter-grid {
+  margin-bottom: 26px;
+}
+
+/* Сортировка --- Особенности */
+.filter-catalog .filter-features {
+  margin-bottom: 30px;
+}
+
 
 /* Каталог готовых шаблонов */
 .catalog {
   display: flex;
   flex-direction: column;
   width: 760px;
-  min-height: 2160px;
 
   line-height: 18px;
   color: #666;
 
   background-color: #fff;
 }
-    /* Сортировка Каталога */
+
+    /* Каталог --- Сортировка-Крошки */
 .sort-catalog {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 52px;
+  align-items: flex-end;
+  margin-bottom: 58px;
 }
 
 .sort-catalog h3 {
   margin: 0;
-  margin-right: 260px;
+  margin-top: 4px;
+  margin-right: 265px;
   padding: 0;
 
   text-transform: uppercase;
-}
-
-.sort-list {
-  width: 280px;
-}
-
-.sort-direction {
-  width: 60px;
 }
 
 .sort-list,
@@ -590,12 +727,21 @@ a {
   list-style: none;
 }
 
-.sort-list a,
-.sort-direction a { 
+.sort-list {
+  margin-right: 35px;
+}
+
+.sort-list li {
+  margin-right: 22px;
+}
+
+.sort-list a {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
+}
 
-  list-style: none;
+.sort-direction li {
+  padding: 4px;
 }
 
 .sort-list a:hover,
@@ -616,9 +762,8 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 760px;
-  min-height: 1920px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
   padding: 0;
 
   list-style: none;
@@ -628,30 +773,42 @@ a {
   position: relative;
 
   width: 360px;
-  min-height: 620px;
-  margin-bottom: 35px;
+  /* min-height: 620px; */
+  margin-bottom: 29px;
+  padding-top: 40px;
 }
- /* Далее не догоняю почему блок не скрывается классом .visually-hidden. Да, он абсолютно спозиционирован и вырван из общего потока, но почему не принимает занчения из .visually-hidden */
+
 .item-info {
   position: absolute;
   bottom: 0;
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-
   width: 100%;
-  min-height: 235px;
 
   text-align: center;
 
   background-color: #eee;
 }
 
+.item-info p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.item-info .btn {
+  margin-bottom: 49px;
+  padding: 15px 60px;
+}
+
 .item-info .btn:hover,
 .item-info .btn:active {
   color: #fff;
+}
+.item-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .item-title a {
@@ -665,21 +822,24 @@ a {
 /* Пагинация */
 .pagination-list {
   display: flex;
-  width: 460px;
-  min-height: 55px;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 
   text-transform: uppercase;
   list-style: none;
 }
 
-.pagination-item {
-  width: 50px;
-  min-height: 50px;
-  margin-right: 10px;
+.pagination-item,
+.pagination-next {
+  margin-right: 11px;
+  padding: 18px 20px 10px;
 
   text-align: center;
+}
+
+.pagination-item:first-child {
+  padding-right: 18px;
 }
 
 .pagination-next {
@@ -718,8 +878,6 @@ a {
   background-color: #fff;
   border: 2px solid #dbdbdb;
 }
-
-
 
 /* Модальная форма */
 .modal-form {
