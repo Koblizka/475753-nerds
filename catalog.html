@@ -20,7 +20,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="nav-user">
-          <li><a href="#">Корзина</a></li>
+          <li class="user-cart"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -32,29 +32,33 @@
             <fieldset class="filter-price">
               <legend class="sort-name">Стоимость:</legend>
               <div class="slide-range-block">
-                <label class="visually-hidden" for="price-range">Ползунок стоимости</label>
-                <input id="price-range" type="range" name="price-range" min="0" max="15000" step="100">
+                <div class="range-controls">
+                  <div class="slider-scale">
+                    <div class="slider-bar" style=""></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
               </div>
               <div class="num-range-block">
-                <label for="price-num-min" aria-label="Минимальная цена">От</label>
-                <input id="price-num-min" type="number" name="price-num-min" min="0" max="14900" step="100">
-                <label for="price-num-max" aria-label="Максимальная цена">До</label>
-                <input id="price-num-max" type="number" name="price-num-max" min="100" max="15000" step="100" value="15000">
+                <label for="price-num-min" aria-label="Минимальная цена">От <input id="price-num-min" type="text" name="price-num-min" value="0"></label>
+                <label for="price-num-max" aria-label="Максимальная цена">До <input id="price-num-max" type="text" name="price-num-max" value="15000"></label>
+                
               </div>
             </fieldset>
             <fieldset class="filter-grid">
               <legend class="sort-name">Сетка:</legend>
               <ul>
                 <li class="sort-option">
-                  <input id="layout-adaptive" type="radio" name="sort-layout" value="layout-adaptive" checked>
+                  <input class="visually-hidden" id="layout-adaptive" type="radio" name="sort-layout" value="layout-adaptive" checked>
                   <label for="layout-adaptive">Адаптивная</label>
                 </li>
                 <li class="sort-option">
-                  <input id="layout-fix" type="radio" name="sort-layout" value="layout-fix">
+                  <input class="visually-hidden" id="layout-fix" type="radio" name="sort-layout" value="layout-fix">
                   <label for="layout-fix">Фиксированная</label>
                 </li>
                 <li class="sort-option">
-                  <input id="layout-resp" type="radio" name="sort-layout" value="layout-resp">
+                  <input class="visually-hidden" id="layout-resp" type="radio" name="sort-layout" value="layout-resp">
                   <label for="layout-resp">Резиновая</label>
                 </li>
               </ul>
@@ -63,23 +67,23 @@
               <legend class="sort-name">Особенности:</legend>
               <ul>
                 <li class="sort-option">
-                  <input id="feature-slider" type="checkbox" name="feature-slider">
+                  <input class="visually-hidden" id="feature-slider" type="checkbox" name="feature-slider">
                   <label for="feature-slider">Слайдер</label>
                 </li>
                 <li class="sort-option">
-                  <input id="feature-ft" type="checkbox" name="feature-ft">
+                  <input class="visually-hidden" id="feature-ft" type="checkbox" name="feature-ft">
                   <label for="feature-ft">Блок преимуществ</label>
                 </li>
                 <li class="sort-option">
-                  <input id="feature-news" type="checkbox" name="feature-news">
+                  <input class="visually-hidden" id="feature-news" type="checkbox" name="feature-news">
                   <label for="feature-news">Новости</label>
                 </li>
                 <li class="sort-option">
-                  <input id="feature-gallery" type="checkbox" name="feature-gallery">
+                  <input class="visually-hidden" id="feature-gallery" type="checkbox" name="feature-gallery">
                   <label for="feature-gallery">Галерея</label>
                 </li>
                 <li class="sort-option">
-                  <input id="feature-basket" type="checkbox" name="feature-basket">
+                  <input class="visually-hidden" id="feature-basket" type="checkbox" name="feature-basket">
                   <label for="feature-basket">Корзина</label>
                 </li>
               </ul>
@@ -97,8 +101,8 @@
               <li><a href="#">по названию</a></li>
             </ul>
             <ul class="sort-direction">
-              <li><a href="#" aria-label="сортировать от большего к меньшему"></a></li>
-              <li><a href="#" aria-label="сортировать от меньшего к большему"></a></li>
+              <li><a class="dir-down" href="#" aria-label="сортировать от большего к меньшему"></a></li>
+              <li><a class="dir-up" href="#" aria-label="сортировать от меньшего к большему"></a></li>
             </ul>
           </div>
           <ul class="catalog-list">
@@ -106,7 +110,7 @@
               <img src="img/img-sedona.jpg" alt="пример макета Sedona" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="#">Sedona</a></h3>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br> для туристов</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -114,7 +118,7 @@
               <img src="img/img-pink.jpg" alt="пример макета Pink App" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">Pink App</a></h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -122,7 +126,7 @@
               <img src="img/img-barbershop.jpg" alt="пример макета Barbershop" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">Barbershop</a></h3>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -130,7 +134,7 @@
               <img src="img/img-mishka.jpg" alt="пример макета MISHKA" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">MISHKA</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <p>Интернет-магазин<br> вязаных игрушек</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -138,7 +142,7 @@
               <img src="img/img-aplus.jpg" alt="пример макета A Plus" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">A Plus</a></h3>
-                <p>Лендинг курсов повышения квалификации</p>
+                <p>Лендинг курсов повышения<br> квалификации</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -146,7 +150,7 @@
               <img src="img/img-kvast.jpg" alt="пример макета КВАСТ" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">КВАСТ</a></h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
