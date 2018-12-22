@@ -101,7 +101,7 @@
               <li><a href="#">по названию</a></li>
             </ul>
             <ul class="sort-direction">
-              <li><a class="dir-down" href="#" aria-label="сортировать от большего к меньшему"></a></li>
+              <li><a class="dir-down dir-active" href="#" aria-label="сортировать от большего к меньшему"></a></li>
               <li><a class="dir-up" href="#" aria-label="сортировать от меньшего к большему"></a></li>
             </ul>
           </div>
@@ -156,10 +156,10 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-next"><a href="#">Следующая</a></li>
+            <li class="pagination-item btn pagination-current"><a>1</a></li>
+            <li class="pagination-item btn"><a href="#">2</a></li>
+            <li class="pagination-item btn"><a href="#">3</a></li>
+            <li class="pagination-next btn"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -189,28 +189,26 @@
         </div>
       </div>
     </footer>
-    <section class="modal-form visually-hidden">
-      <div class="modal-form-container">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-name">
-            <p>
-              <label for="name">Ваше Имя:</label>
-              <input id="name" name="name" type="text" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="email">Ваш e-mail:</label>
-              <input id="email" name="email" type="email" placeholder="email@example.com">
-            </p>
-          </div>
-          <p class="modal-letter">
-            <label for="letter">Текст письма</label>
-            <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+    <section class="modal-form display-none">
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-name">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input id="name" name="name" type="text" placeholder="Имя Фамилия">
           </p>
-          <button type="submit" name="write-us">Отправить</button>
-        </form>
-      </div>
-      <button type="button" aria-label="Закрыть модальное окно"></button>
-    </section>  
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" name="email" type="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <div class="modal-letter">
+          <label for="letter">Текст письма:</label>
+          <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="btn" type="submit" name="write-us">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть модальное окно"></button>
+    </section>
   </body>
 </html>

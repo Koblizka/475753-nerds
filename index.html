@@ -128,10 +128,10 @@
         <section class="clients">
           <h2 class="visually-hidden">Наши клиенты</h2>
           <ul>
-              <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="Интерактивные онлайн-курсы HtmlAcademy" width="199" height="68"></a></li>
-              <li><a href="#"><img src="img/borodinski-logo.png" alt="Барбершоп Borodinski" width="209" height="90"></a></li>
-              <li><a href="#"><img src="img/pink-logo.png" alt="Мобильное приожение Pink" width="185" height="52"></a></li>
-              <li><a href="#"><img src="img/mishka-logo.png" alt="Интерент-магазин вязаных игрушек mishka" width="173" height="84"></a></li>
+              <li class="clients-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="Интерактивные онлайн-курсы HtmlAcademy" width="199" height="68"></a></li>
+              <li class="clients-item"><a href="#"><img src="img/borodinski-logo.png" alt="Барбершоп Borodinski" width="209" height="90"></a></li>
+              <li class="clients-item"><a href="#"><img src="img/pink-logo.png" alt="Мобильное приожение Pink" width="185" height="52"></a></li>
+              <li class="clients-item"><a href="#"><img src="img/mishka-logo.png" alt="Интерент-магазин вязаных игрушек mishka" width="173" height="84"></a></li>
             </ul>
         </section>
       </div>
@@ -161,24 +161,26 @@
       </div>
       </div>
     </footer>
-    <section class="modal-form visually-hidden">
+    <section class="modal-form display-none">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше Имя:</label>
-          <input id="name" name="name" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input id="email" name="email" type="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="letter">Текст письма</label>
+        <div class="modal-name">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" name="email" type="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <div class="modal-letter">
+          <label for="letter">Текст письма:</label>
           <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit" name="submit">Отправить</button>
+        </div>
+        <button class="btn" type="submit" name="write-us">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть модальное окно"></button>
+      <button class="modal-close" type="button" aria-label="Закрыть модальное окно"></button>
     </section>
   </body>
 </html>
