@@ -951,7 +951,8 @@ a {
   margin-bottom: 20px;
 }
 
-.filter-grid label::before{
+.filter-grid label::before,
+.filter-grid input:checked ~ label::before {
   position: absolute;
   top: 0;
   left: -5px;
@@ -960,21 +961,14 @@ a {
 
   width: 25px;
   height: 25px;
+}
 
+.filter-grid label::before{
   background: url("../img/radio-off.svg")
               no-repeat;
 }
 
 .filter-grid input:checked ~ label::before{
-  position: absolute;
-  top: 0;
-  left: -5px;
-
-  content: "";
-
-  width: 25px;
-  height: 25px;
-
   background: url("../img/radio-on.svg")
               no-repeat;
 }
@@ -984,7 +978,8 @@ a {
   margin-bottom: 30px;
 }
 
-.filter-features label::before{
+.filter-features label::before,
+.filter-features input:checked ~ label::before {
   position: absolute;
   top: 0;
   left: -5px;
@@ -993,21 +988,14 @@ a {
 
   width: 25px;
   height: 25px;
+}
 
+.filter-features label::before{
   background: url("../img/checkbox-off.svg")
               no-repeat;
 }
 
 .filter-features input:checked ~ label::before{
-  position: absolute;
-  top: 0;
-  left: -5px;
-
-  content: "";
-
-  width: 25px;
-  height: 25px;
-
   background: url("../img/checkbox-on.svg")
               no-repeat;
 }
@@ -1072,20 +1060,7 @@ a {
   margin-left: 20px;
 }
 
-.dir-down::before {
-  position: absolute;
-  top: -5px;
-  left: 0;
-
-  content: "";
-
-  width: 15px;
-  height: 15px;
-
-  background: url("../img/icon-down-dir.svg")
-              no-repeat;
-}
-
+.dir-down::before,
 .dir-up::before {
   position: absolute;
   top: -5px;
@@ -1095,7 +1070,14 @@ a {
 
   width: 15px;
   height: 15px;
+}
 
+.dir-down::before {
+  background: url("../img/icon-down-dir.svg")
+              no-repeat;
+}
+
+.dir-up::before {
   background: url("../img/icon-up-dir.svg")
               no-repeat;
 }
