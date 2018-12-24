@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -29,6 +28,14 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества студии дизайна НЁРДС</h2>
         <div class="container-index">
+          <input class="visually-hidden" id="slider-control-1" type="radio" name="slider-controls" checked>
+          <input class="visually-hidden" id="slider-control-2" type="radio" name="slider-controls">
+          <input class="visually-hidden" id="slider-control-3" type="radio" name="slider-controls">
+          <div class="advantages-controls">
+            <label for="slider-control-1"></label>
+            <label for="slider-control-2"></label>
+            <label for="slider-control-3"></label>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item">
               <b class="advantages-slogan">
@@ -41,7 +48,7 @@
               </p>
               <a class="btn" href="#" >Узнать больше</a>
             </li>
-            <li class="advantages-item visually-hidden ">
+            <li class="advantages-item">
               <b class="advantages-slogan">
                 Любим математику<br>
                 как никто другой
@@ -52,7 +59,7 @@
               </p>
               <a class="btn" href="">Узнать больше</a>
             </li>
-            <li class="advantages-item visually-hidden">
+            <li class="advantages-item">
               <b class="advantages-slogan">
                 Только ночь,<br>
                 только хардкор
@@ -63,11 +70,6 @@
               </p>
               <a class="btn" href="">Узнать больше</a>
             </li>
-          </ul>
-          <ul class="advantages-controls">
-            <li><button class="active-slide" type="button"><span class="visually-hidden">первый слайд</span></button></li>
-            <li><button type="button"><span class="visually-hidden">второй слайд</span></button></li>
-            <li><button type="button"><span class="visually-hidden">третий слайд</span></button></li>
           </ul>
         </div>
       </section>
@@ -138,11 +140,12 @@
     </main>
     <footer>
       <section class="contacts">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.307319059545!2d30.32062268200421!3d59.93853644055591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545558315371" max-width="1440" min-width="1200" height="416" style="border:0"></iframe>
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-wrapper">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
-            191186, Санкт-Петербург, 
+            191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7 (812) 275-75-75</p>
@@ -182,5 +185,6 @@
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть модальное окно"></button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
