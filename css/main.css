@@ -26,11 +26,13 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,*::before,*::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -94,7 +96,10 @@ a {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
-  box-shadow: 0 2px 0 0
+  -webkit-box-shadow: 0 2px 0 0
+            rgba(0, 0, 0, 0.25)
+              inset;
+          box-shadow: 0 2px 0 0
             rgba(0, 0, 0, 0.25)
               inset;
 }
@@ -115,9 +120,15 @@ a {
 }
 
 .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   padding-top: 50px;
 
@@ -135,6 +146,8 @@ a {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -148,8 +161,12 @@ a {
 }
 
 .nav-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav-list a,
@@ -214,6 +231,8 @@ a {
 }
 
 .advantages .container-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -226,8 +245,13 @@ a {
 
 .advantages-item {
   display: none;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0;
   padding: 0;
   padding-top: 77px;
@@ -281,8 +305,14 @@ a {
   bottom: 89px;
   left: 50%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 90px;
   margin: 0;
   padding: 0;
@@ -290,7 +320,11 @@ a {
 
   list-style: none;
 
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+
+      -ms-transform: translateX(-50%);
+
+          transform: translateX(-50%);
 }
 
 /* Кругляши кнопочки */
@@ -311,14 +345,20 @@ a {
 }
 
 #slider-control-1:checked ~ .advantages-list .advantages-item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #slider-control-2:checked ~ .advantages-list .advantages-item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #slider-control-3:checked ~ .advantages-list .advantages-item:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -353,6 +393,8 @@ a {
 }
 
 .products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -361,9 +403,16 @@ a {
 }
 
 .products-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 300px;
   margin-right: 100px;
   margin-bottom: 80px;
@@ -400,6 +449,7 @@ a {
 }
 
 .products-item p {
+  max-width: 265px;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
@@ -441,6 +491,8 @@ a {
 
 /* О нас */
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
   padding-top: 40px;
@@ -458,8 +510,13 @@ a {
 }
 
 .about-us-dis {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 660px;
   padding-top: 35px;
 }
@@ -505,8 +562,13 @@ a {
 }
 
 .about-us-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 360px;
   margin-left: 140px;
   padding-top: 244px;
@@ -563,6 +625,8 @@ a {
 }
 
 .clients ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -639,8 +703,15 @@ a {
 .contacts {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -657,9 +728,18 @@ a {
   top: 55px;
   left: 140px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 320px;
   padding: 49px 50px 45px;
 
@@ -689,15 +769,20 @@ a {
 }
 
 .contacts-wrapper .btn {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   min-width: 220px;
   padding: 18px 44px 15px;
 }
 
 /* Футер */
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 67px;
   padding-bottom: 80px;
 
@@ -715,6 +800,8 @@ a {
 }
 
 .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -727,9 +814,15 @@ a {
 }
 
 .social-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80px;
   height: 80px;
 
@@ -761,9 +854,14 @@ a {
 
 /* Инпуты Каталога */
 .container-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin-top: 54px;
 }
@@ -793,8 +891,13 @@ a {
 }
 
 .filter-catalog form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 780px;
 }
 
@@ -898,7 +1001,9 @@ a {
 
   border: 8px solid #fff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0
+  -webkit-box-shadow: 0 2px 1px 0
+            #cfcfcf;
+          box-shadow: 0 2px 1px 0
             #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
@@ -1024,8 +1129,13 @@ a {
 
 /* Каталог готовых шаблонов */
 .catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 760px;
 
   line-height: 18px;
@@ -1036,8 +1146,12 @@ a {
 
 /* Каталог --- Сортировка-Крошки */
 .sort-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 58px;
 }
 
@@ -1052,6 +1166,8 @@ a {
 
 .sort-list,
 .sort-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1130,9 +1246,14 @@ a {
 
     /* Каталог - карточка товаров */
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 760px;
   margin: 0;
   margin-bottom: 25px;
@@ -1168,9 +1289,18 @@ a {
   position: absolute;
   bottom: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-height: 580px;
   padding-top: 30px;
@@ -1215,13 +1345,15 @@ a {
 .catalog-item:hover .item-info {
   top: auto;
 
-  height: initial;
+  height: auto;
 
-  clip: unset;
+  clip: auto;
 }
 
 /* Пагинация */
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   margin-bottom: 60px;
@@ -1275,7 +1407,10 @@ a {
 .pagination-current:hover,
 .pagination-current:active {
   background-color: #fff;
-  box-shadow: #eee
+  -webkit-box-shadow: #eee
+              0 0 0 2px
+              inset;
+          box-shadow: #eee
               0 0 0 2px
               inset;
 }
@@ -1290,9 +1425,18 @@ a {
   bottom: 180px;
   left: 50%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 960px;
   min-height: 590px;
   margin-left: -480px;
@@ -1303,10 +1447,14 @@ a {
   color: #000;
 
   background-color: #fff;
-  box-shadow: 0 20px 40px 0
+  -webkit-box-shadow: 0 20px 40px 0
+            rgba(0, 1, 1, 0.75);
+          box-shadow: 0 20px 40px 0
             rgba(0, 1, 1, 0.75);
 
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+
+          animation: bounce 0.6s;
 }
 
 .modal-form form {
@@ -1323,8 +1471,12 @@ a {
 }
 
 .modal-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -1437,31 +1589,59 @@ a {
 }
 
 .modal-err {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -1469,13 +1649,40 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }

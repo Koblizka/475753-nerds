@@ -61,10 +61,4 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-// Слайдер
-
-slide_controls.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-})
 
