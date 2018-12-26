@@ -123,9 +123,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -139,17 +136,21 @@ a {
 
 .header-nav ul {
   margin: 0;
+  margin-left: 202px;
   padding: 0;
   padding-top: 15px;
 
   list-style: none;
 }
 
+.header-nav ul:last-child {
+  margin-left: auto;
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
 }
 
 .nav-list li:first-child {
@@ -256,7 +257,7 @@ a {
   padding: 0;
   padding-top: 77px;
   padding-bottom: 80px;
-  padding-right: 780px;
+  padding-right: 640px;
 }
 
 .advantages-slogan {
@@ -284,25 +285,25 @@ a {
 .advantages-item:first-child {
   background: url("../img/slide1.png")
               no-repeat
-              71.5% 17px;
+              93.5% 17px;
 }
 
 .advantages-item:nth-child(2) {
   background: url("../img/slide2.png")
               no-repeat
-              78%;
+              100%;
 }
 
 .advantages-item:nth-child(3) {
   background: url("../img/slide3.png")
               no-repeat
-              74% 18px;
+              100% 18px;
 }
 
 /* Переключатели слайдов */
 .advantages-controls {
   position: absolute;
-  bottom: 89px;
+  bottom: 96px;
   left: 50%;
 
   display: -webkit-box;
@@ -700,7 +701,12 @@ a {
 
 
 /* Футер Контакты */
-.contacts {
+iframe {
+  position: absolute;
+  z-index: 1;
+}
+
+.contacts-container {
   position: relative;
 
   display: -webkit-box;
@@ -713,6 +719,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1440px;
+  min-height: 416px;
   margin: 0 auto;
 
   line-height: 18px;
@@ -720,6 +727,7 @@ a {
 
   background: #eee
               url("../img/map-markerjpg.jpg")
+              center center
               no-repeat;
 }
 
@@ -727,6 +735,7 @@ a {
   position: absolute;
   top: 55px;
   left: 140px;
+  z-index: 2;
 
   display: -webkit-box;
 
@@ -1424,6 +1433,7 @@ a {
   position: fixed;
   bottom: 180px;
   left: 50%;
+  z-index: 100;
 
   display: -webkit-box;
 
