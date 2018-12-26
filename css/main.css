@@ -743,8 +743,6 @@ a {
   width: 320px;
   padding: 49px 50px 45px;
 
-  white-space: pre-line;
-
   background-color: #fff;
 }
 
@@ -762,6 +760,8 @@ a {
 .contacts-wrapper p {
   margin: 0;
   margin-bottom: 18px;
+
+  white-space: pre-line;
 }
 
 .contacts-wrapper p:last-of-type {
