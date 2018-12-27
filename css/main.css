@@ -114,6 +114,8 @@ a {
 
 /* Хеддер и навигация */
 .header-main {
+  min-width: 1200px;
+
   color: #000;
 
   background-color: #eee;
@@ -224,6 +226,10 @@ a {
 
 .logo:active {
   opacity: 0.3;
+}
+
+.main-container {
+  min-width: 1200px;
 }
 
  /* Преимущества и Слайдер */
