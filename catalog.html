@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Магазин готовых товаров</title>
     <link rel="stylesheet" href="css/min-normalize.css">
-    <link rel="stylesheet" href="css/min-main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="header-main">
@@ -95,9 +95,9 @@
           <div class="sort-catalog">
             <h3>Сортировать</h3>
             <ul class="sort-list">
-              <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по названию</a></li>
+              <li><a href="#">по цене</a></li>
             </ul>
             <ul class="sort-direction">
               <li><a class="dir-down dir-active" href="#" aria-label="сортировать от большего к меньшему"></a></li>
@@ -105,67 +105,73 @@
             </ul>
           </div>
           <ul class="catalog-list">
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-sedona.jpg" alt="пример макета Sedona" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="#">Sedona</a></h3>
-                <p>Информационный сайт<br> для туристов</p>
+                <p>Информационный сайт
+                   для туристов</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-pink.jpg" alt="пример макета Pink App" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">Pink App</a></h3>
-                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <p>Продуктовый лендинг
+                  приложения для iOS и Android</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-barbershop.jpg" alt="пример макета Barbershop" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">Barbershop</a></h3>
-                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                <p>Сайт салона красоты.
+                  Для мужчин, да.</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-mishka.jpg" alt="пример макета MISHKA" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">MISHKA</a></h3>
-                <p>Интернет-магазин<br> вязаных игрушек</p>
+                <p>Интернет-магазин
+                  вязаных игрушек</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-aplus.jpg" alt="пример макета A Plus" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">A Plus</a></h3>
-                <p>Лендинг курсов повышения<br> квалификации</p>
+                <p>Лендинг курсов повышения
+                  квалификации</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item" tabindex="0">
               <img src="img/img-kvast.jpg" alt="пример макета КВАСТ" width="360" height="576">
               <div class="item-info visually-hidden">
                 <h3 class="item-title"><a href="">КВАСТ</a></h3>
-                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <p>Промо-сайт производителя
+                  крафтового кваса</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item btn pagination-current"><a>1</a></li>
-            <li class="pagination-item btn"><a href="#">2</a></li>
-            <li class="pagination-item btn"><a href="#">3</a></li>
-            <li class="pagination-next btn"><a href="#">Следующая</a></li>
+            <li><a class="pagination-item btn pagination-current" aria-label="Страница 1">1</a></li>
+            <li><a class="pagination-item btn" href="#" aria-label="Страница 2">2</a></li>
+            <li><a class="pagination-item btn" href="#" aria-label="Страница 3">3</a></li>
+            <li><a class="pagination-next btn" href="#" aria-label="Следующая страница">Следующая</a></li>
           </ul>
         </section>
       </div>
     </main>
     <footer>
       <section class="contacts">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.307319059545!2d30.32062268200421!3d59.93853644055591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545558315371" min-width="1200" width="100%" height="416" style="border:0"></iframe>
+        <iframe class="imap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.307319059545!2d30.32062268200421!3d59.93853644055591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545558315371" height="416" style="border:0"></iframe>
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-container">
         <div class="contacts-wrapper">
@@ -175,7 +181,7 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="btn" href="modal-form.html">Напишите нам</a>
         </div>
       </div>
     </section>
