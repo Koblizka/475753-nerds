@@ -425,22 +425,28 @@ outline: 5px auto -webkit-focus-ring-color;
   margin-bottom: 80px;
 }
 
-.products-item:first-child {
-  background: transparent
+.item-img {
+  margin-bottom: 24px;
+  padding-top: 146px;
+  padding-right: 300px;
+}
+
+.products-item:first-child .item-img {
+  background: #FB565A
               url("../img/illustration-1.jpg")
               no-repeat;
 }
 
-.products-item:nth-child(2) {
-  background: transparent
+.products-item:nth-child(2) .item-img {
+  background: #00CA74
               url("../img/illustration-2.jpg")
               no-repeat;
 }
 
-.products-item:last-child {
-  margin-right: 60px;
+.products-item:last-child .item-img {
+  /* margin-right: 60px; */
 
-  background: transparent
+  background: #EFC849
               url("../img/illustration-3.jpg")
               no-repeat;
 }
@@ -449,7 +455,6 @@ outline: 5px auto -webkit-focus-ring-color;
   margin: 0;
   margin-bottom: 18px;
   padding: 0;
-  padding-top: 170px;
 
   font-size: 24px;
   line-height: 30px;
@@ -581,9 +586,13 @@ outline: 5px auto -webkit-focus-ring-color;
           flex-direction: column;
   width: 360px;
   margin-left: 140px;
-  padding-top: 244px;
+}
 
-  background: transparent
+.about-us-img {
+  margin-bottom: 37px;
+  padding-top: 208px;
+
+  background: #D7DCD3
               url("../img/nerds-illustration.jpg")
               no-repeat;
 }
